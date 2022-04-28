@@ -159,14 +159,14 @@
                     "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
                         "Translate": [
-                            6.497495651245117,
-                            2.043245315551758,
-                            1.679794192314148
+                            5.9439191818237305,
+                            3.320960521697998,
+                            2.2863821983337402
                         ],
                         "Rotate": [
-                            10.202579498291016,
-                            -14.839097023010254,
-                            126.83428192138672
+                            25.360078811645508,
+                            -19.720108032226563,
+                            145.46307373046875
                         ]
                     }
                 },
@@ -180,18 +180,20 @@
                 },
                 "Component_[5265045084611556958]": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 5265045084611556958
+                    "Id": 5265045084611556958,
+                    "DisabledComponents": [
+                        {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 7255796294953281766,
+                            "m_template": {
+                                "$type": "FlyCameraInputComponent"
+                            }
+                        }
+                    ]
                 },
                 "Component_[7169798125182238623]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7169798125182238623
-                },
-                "Component_[7255796294953281766]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 7255796294953281766,
-                    "m_template": {
-                        "$type": "FlyCameraInputComponent"
-                    }
                 },
                 "Component_[8866210352157164042]": {
                     "$type": "EditorInspectorComponent",
@@ -358,12 +360,12 @@
                     "Configuration": {
                         "entityId": "",
                         "CCD Enabled": true,
-                        "Mass": 22.5,
+                        "Mass": 67.50000762939453,
                         "Inertia tensor": {
                             "roll": 0.0,
                             "pitch": 0.0,
                             "yaw": 0.0,
-                            "scale": 3.497267484664917
+                            "scale": 0.9876541495323181
                         }
                     }
                 },
@@ -388,6 +390,11 @@
                             0.0,
                             0.0,
                             0.11780649423599243
+                        ],
+                        "Rotate": [
+                            -179.99996948242188,
+                            -90.0,
+                            -179.99996948242188
                         ]
                     }
                 },
@@ -425,34 +432,20 @@
                     "ColliderConfiguration": {
                         "MaterialSelection": {
                             "MaterialIds": [
-                                {}
+                                {
+                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
+                                }
                             ]
                         }
                     },
                     "ShapeConfiguration": {
-                        "PhysicsAsset": {
-                            "Asset": {
-                                "assetId": {
-                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
-                                    "subId": 858390244
-                                },
-                                "assetHint": "objects/_primitives/_box_1x1.pxmesh"
-                            },
-                            "Configuration": {
-                                "PhysicsAsset": {
-                                    "assetId": {
-                                        "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
-                                        "subId": 858390244
-                                    },
-                                    "loadBehavior": "QueueLoad",
-                                    "assetHint": "objects/_primitives/_box_1x1.pxmesh"
-                                },
-                                "AssetScale": [
-                                    0.30000001192092896,
-                                    0.25,
-                                    0.30000001192092896
-                                ]
-                            }
+                        "ShapeType": 1,
+                        "Box": {
+                            "Configuration": [
+                                0.30000001192092896,
+                                0.30000001192092896,
+                                0.30000001192092896
+                            ]
                         }
                     }
                 }
@@ -484,7 +477,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{0369B5C4-ABF4-57D7-AC72-9F2B25E593C4}"
-                                            }
+                                            },
+                                            "assetHint": "assets/o3descene/warehouse_terrain_diffuse.azmaterial"
                                         }
                                     }
                                 },
@@ -496,7 +490,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{0BB73175-96B4-504A-B862-A7D49082E65B}"
-                                            }
+                                            },
+                                            "assetHint": "assets/o3descene/warehouse_vehicles_diffuse.azmaterial"
                                         }
                                     }
                                 },
@@ -508,7 +503,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{92F687EE-F2B5-5A5D-BF1E-797699B968AE}"
-                                            }
+                                            },
+                                            "assetHint": "assets/o3descene/warehouse_warehouse_diffuse.azmaterial"
                                         }
                                     }
                                 }
@@ -538,7 +534,8 @@
                                 "assetId": {
                                     "guid": "{AE4F6C69-A266-57D6-BFAD-3E73DC4B6FD8}",
                                     "subId": 2090086939
-                                }
+                                },
+                                "assetHint": "assets/o3descene/warehouse.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -546,7 +543,8 @@
                                         "guid": "{AE4F6C69-A266-57D6-BFAD-3E73DC4B6FD8}",
                                         "subId": 2090086939
                                     },
-                                    "loadBehavior": "QueueLoad"
+                                    "loadBehavior": "QueueLoad",
+                                    "assetHint": "assets/o3descene/warehouse.pxmesh"
                                 }
                             }
                         }
@@ -634,12 +632,54 @@
                     "$type": "EditorRigidBodyComponent",
                     "Id": 12399796004250012151,
                     "Configuration": {
-                        "entityId": ""
+                        "entityId": "",
+                        "Compute Mass": false,
+                        "Mass": 10.0,
+                        "Maximum Angular Velocity": 3.140000104904175
+                    }
+                },
+                "Component_[14372972504299901007]": {
+                    "$type": "ScriptEditorComponent",
+                    "Id": 14372972504299901007,
+                    "ScriptComponent": {
+                        "Script": {
+                            "assetId": {
+                                "guid": "{8ECB8474-AFD0-50FB-A07D-32AE08B840BF}",
+                                "subId": 2
+                            },
+                            "loadBehavior": "QueueLoad",
+                            "assetHint": "lua/robotmovement.lua"
+                        }
+                    },
+                    "ScriptAsset": {
+                        "assetId": {
+                            "guid": "{8ECB8474-AFD0-50FB-A07D-32AE08B840BF}",
+                            "subId": 2
+                        },
+                        "assetHint": "lua/robotmovement.lua"
+                    }
+                },
+                "Component_[14695313887595972561]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 14695313887595972561,
+                    "m_template": {
+                        "$type": "ROS2RobotControlComponent",
+                        "topic": "key_vel"
                     }
                 },
                 "Component_[1544527822135395326]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 1544527822135395326
+                },
+                "Component_[16896410109874276217]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 16896410109874276217,
+                    "m_template": {
+                        "$type": "ROS2FrameComponent",
+                        "Namespace Configuration": {
+                            "Namespace Strategy": 1
+                        }
+                    }
                 },
                 "Component_[1891566439227802617]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
@@ -647,9 +687,14 @@
                     "Parent Entity": "Entity_[1146574390643]",
                     "Transform Data": {
                         "Translate": [
-                            3.148590564727783,
-                            0.5440412759780884,
-                            0.6719245314598083
+                            2.703503131866455,
+                            -0.39237356185913086,
+                            0.08225148916244507
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            45.0
                         ]
                     }
                 },
