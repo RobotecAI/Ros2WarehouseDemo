@@ -5,34 +5,46 @@
             "id": "{0A6B5895-9FD7-5F04-96FE-7A5F4E8FE135}",
             "name": "robot",
             "NodeSelectionList": {
-                "unselectedNodes": [
+                "selectedNodes": [
                     "RootNode",
                     "RootNode.astra",
                     "RootNode.wheelFL",
                     "RootNode.wheelBL",
                     "RootNode.wheelFR",
-                    "RootNode.wheelBR",
+                    "RootNode.wheelBR"
+                ],
+                "unselectedNodes": [
+                    "RootNode.astra.transform",
                     "RootNode.astra.custom_properties",
                     "RootNode.astra.UVMap",
-                    "RootNode.astra.RobotBodyMaterial",
+                    "RootNode.astra.RobotBodyMaterial_002",
                     "RootNode.wheelFL.transform",
                     "RootNode.wheelFL.custom_properties",
                     "RootNode.wheelFL.UVMap",
-                    "RootNode.wheelFL.Wheel",
+                    "RootNode.wheelFL.Wheel_002",
                     "RootNode.wheelBL.transform",
                     "RootNode.wheelBL.custom_properties",
                     "RootNode.wheelBL.UVMap",
-                    "RootNode.wheelBL.Wheel",
+                    "RootNode.wheelBL.Wheel_002",
                     "RootNode.wheelFR.transform",
                     "RootNode.wheelFR.custom_properties",
                     "RootNode.wheelFR.UVMap",
-                    "RootNode.wheelFR.Wheel",
+                    "RootNode.wheelFR.Wheel_002",
                     "RootNode.wheelBR.transform",
                     "RootNode.wheelBR.custom_properties",
                     "RootNode.wheelBR.UVMap",
-                    "RootNode.wheelBR.Wheel"
+                    "RootNode.wheelBR.Wheel_002"
                 ]
-            }
+            },
+            "export method": 1,
+            "MaterialSlots": [
+                "RobotBodyMaterial_002",
+                "Wheel_002"
+            ],
+            "PhysicsMaterials": [
+                "Vehicle",
+                "Vehicle"
+            ]
         },
         {
             "$type": "{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup",
@@ -44,7 +56,27 @@
                     "RootNode.wheelFL",
                     "RootNode.wheelBL",
                     "RootNode.wheelFR",
-                    "RootNode.wheelBR"
+                    "RootNode.wheelBR",
+                    "RootNode.astra.transform",
+                    "RootNode.astra.custom_properties",
+                    "RootNode.astra.UVMap",
+                    "RootNode.astra.RobotBodyMaterial_002",
+                    "RootNode.wheelFL.transform",
+                    "RootNode.wheelFL.custom_properties",
+                    "RootNode.wheelFL.UVMap",
+                    "RootNode.wheelFL.Wheel_002",
+                    "RootNode.wheelBL.transform",
+                    "RootNode.wheelBL.custom_properties",
+                    "RootNode.wheelBL.UVMap",
+                    "RootNode.wheelBL.Wheel_002",
+                    "RootNode.wheelFR.transform",
+                    "RootNode.wheelFR.custom_properties",
+                    "RootNode.wheelFR.UVMap",
+                    "RootNode.wheelFR.Wheel_002",
+                    "RootNode.wheelBR.transform",
+                    "RootNode.wheelBR.custom_properties",
+                    "RootNode.wheelBR.UVMap",
+                    "RootNode.wheelBR.Wheel_002"
                 ]
             },
             "rules": {

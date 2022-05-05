@@ -346,111 +346,6 @@
                 }
             }
         },
-        "Entity_[1435224131443]": {
-            "Id": "Entity_[1435224131443]",
-            "Name": "Collider",
-            "Components": {
-                "Component_[10478840556995153977]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 10478840556995153977
-                },
-                "Component_[12501069748207492139]": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 12501069748207492139,
-                    "Configuration": {
-                        "entityId": "",
-                        "CCD Enabled": true,
-                        "Mass": 67.50000762939453,
-                        "Inertia tensor": {
-                            "roll": 0.0,
-                            "pitch": 0.0,
-                            "yaw": 0.0,
-                            "scale": 0.9876541495323181
-                        }
-                    }
-                },
-                "Component_[12855445126082967885]": {
-                    "$type": "SelectionComponent",
-                    "Id": 12855445126082967885
-                },
-                "Component_[13337856510846828128]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 13337856510846828128
-                },
-                "Component_[14265473558218510002]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 14265473558218510002
-                },
-                "Component_[15044025865424757640]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 15044025865424757640,
-                    "Parent Entity": "Entity_[372303138255]",
-                    "Transform Data": {
-                        "Translate": [
-                            0.0,
-                            0.0,
-                            0.11780649423599243
-                        ],
-                        "Rotate": [
-                            -179.99996948242188,
-                            -90.0,
-                            -179.99996948242188
-                        ]
-                    }
-                },
-                "Component_[16509035050009975400]": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 16509035050009975400,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[372303138255]",
-                        "Child Entity": "Entity_[1435224131443]"
-                    }
-                },
-                "Component_[17675931138801985552]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 17675931138801985552
-                },
-                "Component_[18055985999537119427]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 18055985999537119427
-                },
-                "Component_[3904401916823381009]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 3904401916823381009
-                },
-                "Component_[4930187594690636534]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 4930187594690636534
-                },
-                "Component_[8956752390969248569]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 8956752390969248569
-                },
-                "Component_[984741541071017039]": {
-                    "$type": "EditorColliderComponent",
-                    "Id": 984741541071017039,
-                    "ColliderConfiguration": {
-                        "MaterialSelection": {
-                            "MaterialIds": [
-                                {
-                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
-                                }
-                            ]
-                        }
-                    },
-                    "ShapeConfiguration": {
-                        "ShapeType": 1,
-                        "Box": {
-                            "Configuration": [
-                                0.30000001192092896,
-                                0.30000001192092896,
-                                0.30000001192092896
-                            ]
-                        }
-                    }
-                }
-            }
-        },
         "Entity_[1440675936341]": {
             "Id": "Entity_[1440675936341]",
             "Name": "Warehouse",
@@ -584,10 +479,7 @@
                 },
                 "Component_[6531790790423077061]": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 6531790790423077061,
-                    "Child Entity Order": [
-                        "Entity_[1435224131443]"
-                    ]
+                    "Id": 6531790790423077061
                 },
                 "Component_[6696283353552921070]": {
                     "$type": "EditorLockComponent",
@@ -616,6 +508,43 @@
                         }
                     }
                 },
+                "Component_[10255275203288329637]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 10255275203288329637,
+                    "ColliderConfiguration": {
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {
+                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
+                                },
+                                {
+                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
+                                }
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "PhysicsAsset": {
+                            "Asset": {
+                                "assetId": {
+                                    "guid": "{9B9775C1-6415-5A27-A7E7-4634ABB078ED}",
+                                    "subId": 2040808389
+                                },
+                                "assetHint": "assets/o3descene/robot.pxmesh"
+                            },
+                            "Configuration": {
+                                "PhysicsAsset": {
+                                    "assetId": {
+                                        "guid": "{9B9775C1-6415-5A27-A7E7-4634ABB078ED}",
+                                        "subId": 2040808389
+                                    },
+                                    "loadBehavior": "QueueLoad",
+                                    "assetHint": "assets/o3descene/robot.pxmesh"
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[11315452240909602350]": {
                     "$type": "EditorMaterialComponent",
                     "Id": 11315452240909602350
@@ -635,6 +564,17 @@
                         "entityId": "",
                         "Compute Mass": false,
                         "Mass": 10.0,
+                        "Centre of mass offset": [
+                            -0.010666988790035248,
+                            0.0008324435329996049,
+                            0.08906049281358719
+                        ],
+                        "Inertia tensor": {
+                            "roll": 0.0,
+                            "pitch": 0.0,
+                            "yaw": 0.0,
+                            "scale": 12.638968467712402
+                        },
                         "Maximum Angular Velocity": 3.140000104904175
                     }
                 },
@@ -644,19 +584,18 @@
                     "ScriptComponent": {
                         "Script": {
                             "assetId": {
-                                "guid": "{8ECB8474-AFD0-50FB-A07D-32AE08B840BF}",
-                                "subId": 2
+                                "guid": "{C10FC08E-25C3-5E07-8F72-4ED326B1BF59}",
+                                "subId": 1
                             },
-                            "loadBehavior": "QueueLoad",
-                            "assetHint": "lua/robotmovement.lua"
+                            "assetHint": "assets/lua/robotmovement.luac"
                         }
                     },
                     "ScriptAsset": {
                         "assetId": {
-                            "guid": "{8ECB8474-AFD0-50FB-A07D-32AE08B840BF}",
-                            "subId": 2
+                            "guid": "{C10FC08E-25C3-5E07-8F72-4ED326B1BF59}",
+                            "subId": 1
                         },
-                        "assetHint": "lua/robotmovement.lua"
+                        "assetHint": "assets/lua/robotmovement.luac"
                     }
                 },
                 "Component_[14695313887595972561]": {
@@ -664,7 +603,14 @@
                     "Id": 14695313887595972561,
                     "m_template": {
                         "$type": "ROS2RobotControlComponent",
-                        "topic": "key_vel"
+                        "Topic": "key_vel",
+                        "Configuration": {
+                            "Body": "",
+                            "Front left wheel": "",
+                            "Front right wheel": "",
+                            "Rear left wheel": "",
+                            "Rear right wheel": ""
+                        }
                     }
                 },
                 "Component_[1544527822135395326]": {
@@ -727,10 +673,7 @@
                 },
                 "Component_[4895172860961119090]": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 4895172860961119090,
-                    "Child Entity Order": [
-                        "Entity_[1435224131443]"
-                    ]
+                    "Id": 4895172860961119090
                 },
                 "Component_[515315448682290260]": {
                     "$type": "EditorVisibilityComponent",
