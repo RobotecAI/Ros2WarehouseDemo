@@ -101,24 +101,7 @@
                 },
                 "Component_[11864781117211182598]": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 11864781117211182598,
-                    "DisabledComponents": [
-                        {
-                            "$type": "GenericComponentWrapper",
-                            "Id": 9245122284170206283,
-                            "m_template": {
-                                "$type": "ROS2LidarSensorComponent",
-                                "SensorConfiguration": {
-                                    "Publishers": {
-                                        "sensor_msgs::msg::PointCloud2": {
-                                            "Type": "sensor_msgs::msg::PointCloud2",
-                                            "Topic": "pc"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
+                    "Id": 11864781117211182598
                 },
                 "Component_[12194302030282512361]": {
                     "$type": "EditorEntityIconComponent",
@@ -170,11 +153,7 @@
                     "Id": 14695313887595972561,
                     "m_template": {
                         "$type": "ROS2RobotControlComponent",
-                        "Topic": "key_vel",
-                        "Implementation": {
-                            "BroadcastBusMode": false
-                        },
-                        "Configuration": {
+                        "RobotConfiguration": {
                             "Body": "Entity_[394238657263]",
                             "Front left wheel": "",
                             "Front right wheel": "",
@@ -281,6 +260,21 @@
                 "Component_[5588013979175793432]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 5588013979175793432
+                },
+                "Component_[9245122284170206283]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9245122284170206283,
+                    "m_template": {
+                        "$type": "ROS2LidarSensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
