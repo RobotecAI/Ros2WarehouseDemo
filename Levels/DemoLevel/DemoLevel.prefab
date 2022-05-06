@@ -20,9 +20,9 @@
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
                     "Entity_[1176639161715]",
-                    "Entity_[372303138255]",
                     "Entity_[519414066362]",
-                    "Entity_[1440675936341]"
+                    "Entity_[1440675936341]",
+                    "Instance_[423699742458]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -159,14 +159,14 @@
                     "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
                         "Translate": [
-                            5.9439191818237305,
-                            3.320960521697998,
-                            2.2863821983337402
+                            6.782617092132568,
+                            4.051729679107666,
+                            1.857572078704834
                         ],
                         "Rotate": [
-                            25.360078811645508,
-                            -19.720108032226563,
-                            145.46307373046875
+                            8.73631477355957,
+                            -13.418227195739746,
+                            125.47879028320313
                         ]
                     }
                 },
@@ -488,200 +488,6 @@
                 "Component_[9934575964408519307]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 9934575964408519307
-                }
-            }
-        },
-        "Entity_[372303138255]": {
-            "Id": "Entity_[372303138255]",
-            "Name": "Robot",
-            "Components": {
-                "Component_[10128788084311741573]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 10128788084311741573,
-                    "m_template": {
-                        "$type": "InputConfigurationComponent",
-                        "Input Event Bindings": {
-                            "assetId": {
-                                "guid": "{3A4500F3-A650-5CC5-A6AE-72300CC963A5}"
-                            },
-                            "assetHint": "assets/events/robotmovementinput.inputbindings"
-                        }
-                    }
-                },
-                "Component_[10255275203288329637]": {
-                    "$type": "EditorColliderComponent",
-                    "Id": 10255275203288329637,
-                    "ColliderConfiguration": {
-                        "MaterialSelection": {
-                            "MaterialIds": [
-                                {
-                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
-                                },
-                                {
-                                    "MaterialId": "{4080A6D4-AF4E-41CE-B7C9-7699C07123E7}"
-                                }
-                            ]
-                        }
-                    },
-                    "ShapeConfiguration": {
-                        "PhysicsAsset": {
-                            "Asset": {
-                                "assetId": {
-                                    "guid": "{9B9775C1-6415-5A27-A7E7-4634ABB078ED}",
-                                    "subId": 2040808389
-                                },
-                                "assetHint": "assets/o3descene/robot.pxmesh"
-                            },
-                            "Configuration": {
-                                "PhysicsAsset": {
-                                    "assetId": {
-                                        "guid": "{9B9775C1-6415-5A27-A7E7-4634ABB078ED}",
-                                        "subId": 2040808389
-                                    },
-                                    "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/o3descene/robot.pxmesh"
-                                }
-                            }
-                        }
-                    }
-                },
-                "Component_[11315452240909602350]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 11315452240909602350
-                },
-                "Component_[11864781117211182598]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 11864781117211182598
-                },
-                "Component_[12194302030282512361]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 12194302030282512361
-                },
-                "Component_[12399796004250012151]": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 12399796004250012151,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Mass": 10.0,
-                        "Centre of mass offset": [
-                            -0.010666988790035248,
-                            0.0008324435329996049,
-                            0.08906049281358719
-                        ],
-                        "Inertia tensor": {
-                            "roll": 0.0,
-                            "pitch": 0.0,
-                            "yaw": 0.0,
-                            "scale": 12.638968467712402
-                        },
-                        "Maximum Angular Velocity": 3.140000104904175
-                    }
-                },
-                "Component_[14372972504299901007]": {
-                    "$type": "ScriptEditorComponent",
-                    "Id": 14372972504299901007,
-                    "ScriptComponent": {
-                        "Script": {
-                            "assetId": {
-                                "guid": "{C10FC08E-25C3-5E07-8F72-4ED326B1BF59}",
-                                "subId": 1
-                            },
-                            "assetHint": "assets/lua/robotmovement.luac"
-                        }
-                    },
-                    "ScriptAsset": {
-                        "assetId": {
-                            "guid": "{C10FC08E-25C3-5E07-8F72-4ED326B1BF59}",
-                            "subId": 1
-                        },
-                        "assetHint": "assets/lua/robotmovement.luac"
-                    }
-                },
-                "Component_[14695313887595972561]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 14695313887595972561,
-                    "m_template": {
-                        "$type": "ROS2RobotControlComponent",
-                        "Topic": "key_vel",
-                        "Configuration": {
-                            "Body": "",
-                            "Front left wheel": "",
-                            "Front right wheel": "",
-                            "Rear left wheel": "",
-                            "Rear right wheel": ""
-                        }
-                    }
-                },
-                "Component_[1544527822135395326]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 1544527822135395326
-                },
-                "Component_[16896410109874276217]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 16896410109874276217,
-                    "m_template": {
-                        "$type": "ROS2FrameComponent",
-                        "Namespace Configuration": {
-                            "Namespace Strategy": 1
-                        }
-                    }
-                },
-                "Component_[1891566439227802617]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 1891566439227802617,
-                    "Parent Entity": "Entity_[1146574390643]",
-                    "Transform Data": {
-                        "Translate": [
-                            2.703503131866455,
-                            -0.39237356185913086,
-                            0.08225148916244507
-                        ],
-                        "Rotate": [
-                            0.0,
-                            0.0,
-                            45.0
-                        ]
-                    }
-                },
-                "Component_[2252255488684264259]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 2252255488684264259
-                },
-                "Component_[3535710175048715255]": {
-                    "$type": "SelectionComponent",
-                    "Id": 3535710175048715255
-                },
-                "Component_[3665142490224767418]": {
-                    "$type": "AZ::Render::EditorMeshComponent",
-                    "Id": 3665142490224767418,
-                    "Controller": {
-                        "Configuration": {
-                            "ModelAsset": {
-                                "assetId": {
-                                    "guid": "{9B9775C1-6415-5A27-A7E7-4634ABB078ED}",
-                                    "subId": 271285988
-                                },
-                                "assetHint": "assets/o3descene/robot.azmodel"
-                            }
-                        }
-                    }
-                },
-                "Component_[4531367159171096772]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 4531367159171096772
-                },
-                "Component_[4895172860961119090]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 4895172860961119090
-                },
-                "Component_[515315448682290260]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 515315448682290260
-                },
-                "Component_[5588013979175793432]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 5588013979175793432
                 }
             }
         },
@@ -1690,6 +1496,28 @@
                     "Id": 9663206437272567004
                 }
             }
+        }
+    },
+    "Instances": {
+        "Instance_[423699742458]": {
+            "Source": "Prefabs/Robot.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[18358065267338696147]/Parent Entity",
+                    "value": "../Entity_[1146574390643]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[18358065267338696147]/Transform Data/Translate/0",
+                    "value": 3.2298688888549805
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[18358065267338696147]/Transform Data/Translate/1",
+                    "value": 0.011437773704528809
+                }
+            ]
         }
     }
 }
