@@ -56,27 +56,7 @@
                     "RootNode.wheelFL",
                     "RootNode.wheelBL",
                     "RootNode.wheelFR",
-                    "RootNode.wheelBR",
-                    "RootNode.astra.transform",
-                    "RootNode.astra.custom_properties",
-                    "RootNode.astra.UVMap",
-                    "RootNode.astra.RobotBodyMaterial_002",
-                    "RootNode.wheelFL.transform",
-                    "RootNode.wheelFL.custom_properties",
-                    "RootNode.wheelFL.UVMap",
-                    "RootNode.wheelFL.Wheel_002",
-                    "RootNode.wheelBL.transform",
-                    "RootNode.wheelBL.custom_properties",
-                    "RootNode.wheelBL.UVMap",
-                    "RootNode.wheelBL.Wheel_002",
-                    "RootNode.wheelFR.transform",
-                    "RootNode.wheelFR.custom_properties",
-                    "RootNode.wheelFR.UVMap",
-                    "RootNode.wheelFR.Wheel_002",
-                    "RootNode.wheelBR.transform",
-                    "RootNode.wheelBR.custom_properties",
-                    "RootNode.wheelBR.UVMap",
-                    "RootNode.wheelBR.Wheel_002"
+                    "RootNode.wheelBR"
                 ]
             },
             "rules": {

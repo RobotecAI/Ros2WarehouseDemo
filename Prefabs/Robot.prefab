@@ -56,7 +56,7 @@
     "Entities": {
         "Entity_[394238657263]": {
             "Id": "Entity_[394238657263]",
-            "Name": "Robot",
+            "Name": "base",
             "Components": {
                 "Component_[10255275203288329637]": {
                     "$type": "EditorColliderComponent",
@@ -153,12 +153,14 @@
                     "Id": 14695313887595972561,
                     "m_template": {
                         "$type": "ROS2RobotControlComponent",
-                        "RobotConfiguration": {
-                            "Body": "Entity_[394238657263]",
-                            "Front left wheel": "",
-                            "Front right wheel": "",
-                            "Rear left wheel": "",
-                            "Rear right wheel": ""
+                        "ControlConfiguration": {
+                            "RobotConfiguration": {
+                                "Body": "Entity_[394238657263]",
+                                "Front left wheel": "",
+                                "Front right wheel": "",
+                                "Rear left wheel": "",
+                                "Rear right wheel": ""
+                            }
                         }
                     }
                 },
@@ -179,7 +181,14 @@
                 "Component_[1891566439227802617]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 1891566439227802617,
-                    "Parent Entity": "ContainerEntity"
+                    "Parent Entity": "ContainerEntity",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            0.0989658385515213
+                        ]
+                    }
                 },
                 "Component_[2252255488684264259]": {
                     "$type": "EditorLockComponent",
