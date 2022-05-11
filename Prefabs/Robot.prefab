@@ -148,9 +148,13 @@
                         "assetHint": "scripts/simpletwistcontrol.luac"
                     }
                 },
-                "Component_[14695313887595972561]": {
+                "Component_[1544527822135395326]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 1544527822135395326
+                },
+                "Component_[16549089385710831514]": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 14695313887595972561,
+                    "Id": 16549089385710831514,
                     "m_template": {
                         "$type": "ROS2RobotControlComponent",
                         "ControlConfiguration": {
@@ -164,10 +168,6 @@
                         }
                     }
                 },
-                "Component_[1544527822135395326]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 1544527822135395326
-                },
                 "Component_[16896410109874276217]": {
                     "$type": "GenericComponentWrapper",
                     "Id": 16896410109874276217,
@@ -175,7 +175,8 @@
                         "$type": "ROS2FrameComponent",
                         "Namespace Configuration": {
                             "Namespace Strategy": 1
-                        }
+                        },
+                        "Frame Name": "base_footprint"
                     }
                 },
                 "Component_[1891566439227802617]": {
@@ -221,46 +222,45 @@
                             "ComponentId": 1891566439227802617
                         },
                         {
-                            "ComponentId": 10128788084311741573,
+                            "ComponentId": 3665142490224767418,
                             "SortIndex": 1
                         },
                         {
-                            "ComponentId": 3665142490224767418,
+                            "ComponentId": 11315452240909602350,
                             "SortIndex": 2
                         },
                         {
-                            "ComponentId": 11315452240909602350,
+                            "ComponentId": 16896410109874276217,
                             "SortIndex": 3
                         },
                         {
-                            "ComponentId": 16896410109874276217,
+                            "ComponentId": 10255275203288329637,
                             "SortIndex": 4
                         },
                         {
-                            "ComponentId": 10255275203288329637,
+                            "ComponentId": 12399796004250012151,
                             "SortIndex": 5
                         },
                         {
-                            "ComponentId": 12399796004250012151,
+                            "ComponentId": 9245122284170206283,
                             "SortIndex": 6
                         },
                         {
-                            "ComponentId": 9245122284170206283,
+                            "ComponentId": 14372972504299901007,
                             "SortIndex": 7
                         },
                         {
-                            "ComponentId": 14372972504299901007,
-                            "SortIndex": 8
-                        },
-                        {
                             "ComponentId": 14695313887595972561,
-                            "SortIndex": 9
+                            "SortIndex": 8
                         }
                     ]
                 },
                 "Component_[4895172860961119090]": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 4895172860961119090
+                    "Id": 4895172860961119090,
+                    "Child Entity Order": [
+                        "Entity_[619022704110]"
+                    ]
                 },
                 "Component_[515315448682290260]": {
                     "$type": "EditorVisibilityComponent",
@@ -269,10 +269,28 @@
                 "Component_[5588013979175793432]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 5588013979175793432
+                }
+            }
+        },
+        "Entity_[619022704110]": {
+            "Id": "Entity_[619022704110]",
+            "Name": "lidar",
+            "Components": {
+                "Component_[11572685227958414430]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11572685227958414430
                 },
-                "Component_[9245122284170206283]": {
+                "Component_[13777205305195864809]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13777205305195864809
+                },
+                "Component_[16829695612435968605]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16829695612435968605
+                },
+                "Component_[16881859919470625779]": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 9245122284170206283,
+                    "Id": 16881859919470625779,
                     "m_template": {
                         "$type": "ROS2LidarSensorComponent",
                         "SensorConfiguration": {
@@ -284,6 +302,46 @@
                             }
                         }
                     }
+                },
+                "Component_[17085680925863458488]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 17085680925863458488
+                },
+                "Component_[259085584225798023]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 259085584225798023,
+                    "m_template": {
+                        "$type": "ROS2FrameComponent",
+                        "Namespace Configuration": {
+                            "Namespace Strategy": 1
+                        },
+                        "Frame Name": "lidar"
+                    }
+                },
+                "Component_[3183944672285351573]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3183944672285351573
+                },
+                "Component_[3923685223132067795]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3923685223132067795
+                },
+                "Component_[4866639910804050404]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 4866639910804050404,
+                    "Parent Entity": "Entity_[394238657263]"
+                },
+                "Component_[4923171208704782939]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4923171208704782939
+                },
+                "Component_[6072918691154935787]": {
+                    "$type": "SelectionComponent",
+                    "Id": 6072918691154935787
+                },
+                "Component_[8818456479688435698]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8818456479688435698
                 }
             }
         }
