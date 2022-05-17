@@ -338,8 +338,6 @@
                     "ColliderConfiguration": {
                         "MaterialSelection": {
                             "MaterialIds": [
-                                {},
-                                {},
                                 {}
                             ]
                         }
