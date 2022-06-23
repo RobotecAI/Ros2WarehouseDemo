@@ -62,6 +62,30 @@
                     "$type": "EditorColliderComponent",
                     "Id": 10255275203288329637,
                     "ColliderConfiguration": {
+                        "MaterialSlots": {
+                            "Slots": [
+                                {
+                                    "Name": "RobotBodyMaterial_002",
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{EF76347C-319F-584E-9DDE-A06D328F4304}",
+                                            "subId": 1
+                                        },
+                                        "assetHint": "physx/glass.physicsmaterial"
+                                    }
+                                },
+                                {
+                                    "Name": "Wheel_002",
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{EF76347C-319F-584E-9DDE-A06D328F4304}",
+                                            "subId": 1
+                                        },
+                                        "assetHint": "physx/glass.physicsmaterial"
+                                    }
+                                }
+                            ]
+                        },
                         "MaterialSelection": {
                             "MaterialIds": [
                                 {
@@ -90,7 +114,8 @@
                                     },
                                     "loadBehavior": "QueueLoad",
                                     "assetHint": "assets/o3descene/robot.pxmesh"
-                                }
+                                },
+                                "UseMaterialsFromAsset": false
                             }
                         }
                     }
